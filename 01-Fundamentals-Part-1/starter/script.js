@@ -273,7 +273,7 @@ if (favorite === 23) { // "22" == 23 --> FALSE
 } 
 
 if (favorite !== 23) console.log("Why not 23?");
-*/
+
 
 const hasDriversLicense = true; // A
 const hasGoodVision = true; // B
@@ -282,12 +282,12 @@ console.log(hasDriversLicense && hasGoodVision); // && === AND
 console.log(hasDriversLicense || hasGoodVision); // || = OR
 console.log(!hasDriversLicense); // ! = NOT
 
-/*
+
 if (hasDriversLicense && hasGoodVision) {
 	console.log("Sarah is able to drive")
 } else {
 	console.log("Someone else should drive...")
-}*/
+}
 
 const isTired = false;
 console.log(hasDriversLicense && hasGoodVision && isTired);
@@ -296,4 +296,5 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 	console.log("Sarah is able to drive")
 } else {
 	console.log("Someone else should drive...")
-}
+}*/
+
