@@ -42,6 +42,7 @@ console.log(typeof 'Johan');
 javascriptIsFun = "YES!";
 console.log(typeof javascriptIsFun);
 
+// let const and var
 let year;
 console.log(year);
 console.log(typeof year);
@@ -50,8 +51,6 @@ year = 1991;
 console.log(typeof year);
 
 console.log(typeof null);
-
-
 
 let age = 30;
 age = 31;
@@ -248,7 +247,6 @@ if (height){
 	console.log("Height is UNDEFINED")
 }
 
-
 // Equality operators
 const age = "18";
 if (age === 18) console.log("You just became an adult! (strict)");
@@ -274,7 +272,7 @@ if (favorite === 23) { // "22" == 23 --> FALSE
 
 if (favorite !== 23) console.log("Why not 23?");
 
-
+// Logical operators
 const hasDriversLicense = true; // A
 const hasGoodVision = true; // B
 
@@ -296,5 +294,100 @@ if (hasDriversLicense && hasGoodVision && !isTired) {
 	console.log("Sarah is able to drive")
 } else {
 	console.log("Someone else should drive...")
-}*/
+}
 
+// Coding challenge #3!
+
+const dolphinsScore1 = 96;
+const dolphinsScore2 = 108;
+const dolphinsScore3 = 89;
+
+const koalasScore1 = 88;
+const koalasScore2 = 91;
+const koalasScore3 = 110; 
+
+const averageDolphin = (dolphinsScore1 + dolphinsScore2 + dolphinsScore3) / 3;
+const averageKoala = (koalasScore1 + koalasScore2 + koalasScore3) / 3;
+
+if (averageDolphin > averageKoala) {
+	console.log(`The Dolphins are the winners, wigh an average score of ${averageDolphin}`)
+} else if (averageKoala > averageDolphin) {
+	console.log(`The koalas are the winners, wigh an average score of ${averageKoala}`)
+} else {
+	console.log("It is a tie!")
+}
+
+const dolphinsScore1 = 97;
+const dolphinsScore2 = 112;
+const dolphinsScore3 = 101;
+
+const koalasScore1 = 88;
+const koalasScore2 = 91;
+const koalasScore3 = 110; 
+
+const minimumScore = 100;
+
+if (dolphinsScore1 > koalasScore1 && minimumScore >= 100) {
+	console.log ("The dolphins win!")
+} else if (dolphinsScore1 < koalasScore1 && minimumScore >= 100) {
+	console.log ("The koalas win!")
+} else {
+	console.log("Its a draw!")
+}
+if (dolphinsScore2 > koalasScore2 && minimumScore >= 100) {
+	console.log ("The dolphins win!")
+} else if (dolphinsScore2 < koalasScore2 && minimumScore >= 100) {
+	console.log ("The koalas win!")
+} else {
+	console.log("Its a draw!")
+}
+if (dolphinsScore3 > koalasScore3 && minimumScore >= 100) {
+	console.log ("The dolphins win!")
+} else if (dolphinsScore3 < koalasScore3 && minimumScore >= 100) {
+	console.log ("The koalas win!")
+} else {
+	console.log("Its a draw!")
+}
+*/
+
+// Switch statement
+
+const day = "friday";
+
+switch(day) {
+	case "monday": // day === "monday" 
+		console.log("Plan course structure");
+		console.log("Go to coding meetup");
+		break;
+	case "tuesday":
+		console.log("Prepare theory videos");
+		break;
+	case "wednesday":
+	case "thursday":
+		console.log("Write code examples");
+		break;
+	case "friday":
+		console.log("Record videos");
+		break;
+	case "saturday":
+	case "sunday":
+		console.log("Enjoy the weekend!")
+		break;
+	default:
+		console.log("Not a valid day!")
+}
+
+if (day === "monday") {
+	console.log("Plan course structure");
+	console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+	console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+	console.log("Write code examples");
+} else if (day === "friday") {
+	console.log("Record videos");
+} else if (day === "saturday" || day === "sunday"){
+	console.log("Enjoy the weekend!")
+} else {
+	console.log("Not a valid day!")
+}
