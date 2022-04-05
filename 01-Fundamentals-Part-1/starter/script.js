@@ -348,7 +348,6 @@ if (dolphinsScore3 > koalasScore3 && minimumScore >= 100) {
 } else {
 	console.log("Its a draw!")
 }
-*/
 
 // Switch statement
 
@@ -391,3 +390,45 @@ if (day === "monday") {
 } else {
 	console.log("Not a valid day!")
 }
+
+
+// Statements and expression
+
+3 + 4 // Expression
+1997 // Expression
+true && false && !false // Expression
+
+if (23 > 10) { // Statement
+	const str ="23 is bigger";
+}
+
+const me ="Johan"
+console.log(`I'm ${2037 - 1997} years old ${me}`)
+
+
+// The conditional (Ternary) operator
+
+const age = 24;
+//age >= 18 ? console.log("I like to drink wine") : 
+//console.log("I like to drink water");
+
+const drink = age >= 18 ? "wine" : "water";
+console.log(drink);
+
+let drink2;
+if (age >= 18) {
+	drink2 = "wine";
+} else {
+	drink2 = "water";
+}
+console.log(drink2);
+
+console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
+
+// Coding challenge #4 
+
+const bill = 430; 
+const tip = bill <= 300 && bill >= 50 ? bill *0.15 : bill *0.2;
+
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total amount value is ${tip + bill}`)
+*/
